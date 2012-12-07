@@ -34,6 +34,9 @@ my $num   = 12104584011;
 my $voice = Google::Voice->new->login($usr, $pass) or 
 	die "Google Voice connection failed with user $usr\n";
 
+# seconds to sleep before re-checking sms
+my $sleep = 10;
+
 my ($from,$txt,$cmd);
 
 while(1){
@@ -72,7 +75,7 @@ while(1){
       }
     }
   }
-  sleep 10;
+  sleep $sleep;
 }
 
 sub trim($){
