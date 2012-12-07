@@ -72,10 +72,10 @@ while(1){
       }
     }
   }
+  sleep 10;
 }
 
-sub trim($)
-{
+sub trim($){
   my $s = shift;
   $s =~ s/^\s+//;
   $s =~ s/\s+$//;
