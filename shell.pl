@@ -10,6 +10,12 @@
 # To run a shell command, simply text the command,
 # prefaced by a dollar sign '$'. The result will 
 # texted back. You can then repeat the process.
+#
+# WARNING (AGAIN): This is very insecure. It's a fun 
+# toy, but should not be used with any remotely 
+# visible machine. See the following information for
+# all the reasons NOT to use this script:
+# http://en.wikipedia.org/wiki/Short_Message_Service#Vulnerabilities
 
 use strict;
 use warnings;
